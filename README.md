@@ -1,15 +1,14 @@
 <h1 align="center"> 
-  <img width="42" height="42" alt="logo" src="src/assets/logo.svg" />
+  <img width="200" alt="logo" src="src/assets/logo.svg" />
   <br>
-  Sistema de Agendamento para Petshop
-  <p>
-    <img src="https://img.shields.io/github/last-commit/SEU_USUARIO/SEU_REPOSITORIO?style=for-the-badge&logo=git&logoColor=white&color=6B73FF" alt="Last Commit">
-    <img src="https://img.shields.io/github/languages/top/SEU_USUARIO/SEU_REPOSITORIO?style=for-the-badge&color=6B73FF" alt="Top Language">
-    <img src="https://img.shields.io/github/languages/count/SEU_USUARIO/SEU_REPOSITORIO?style=for-the-badge&color=000DFF" alt="Languages Count">
+   <p>
+    <img src="https://img.shields.io/github/last-commit/DanielVerissimo1/agendamento-petshop?style=for-the-badge&logo=git&logoColor=white&color=6B73FF" alt="Last Commit">
+    <img src="https://img.shields.io/github/languages/top/DanielVerissimo1/agendamento-petshop?style=for-the-badge&color=6B73FF" alt="Top Language">
+    <img src="https://img.shields.io/github/languages/count/DanielVerissimo1/agendamento-petshop?style=for-the-badge&color=000DFF" alt="Languages Count">
   </p>
 </h1>
 
-**Sistema de Agendamento para Petshop** é um projeto desenvolvido como projeto final da parte de prática com **JavaScript** na criação de aplicações interativas e integradas com APIs. A proposta é simular um sistema de agendamento para petshop, onde o usuário pode cadastrar, visualizar, filtrar e remover agendamentos — com dados armazenados via **JSON Server**.
+**Mundo Pet** é um projeto desenvolvido como sistema de agendamento para petshop, servindo como trabalho final da etapa prática com JavaScript, focada na criação de aplicações interativas integradas a APIs. A proposta é simular um sistema de agendamento para petshop, onde o usuário pode cadastrar, visualizar, filtrar e remover agendamentos — com dados armazenados via **JSON Server**.
 
 ---
 
