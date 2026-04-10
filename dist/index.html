@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mundo Pet</title>
+
+        <link rel="stylesheet" href="./src/styles/index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet" />
+    <link rel="icon" href="pet-paw.svg"><script defer src="main.js"></script></head>
+    <body>
+        <div class="container">
+            <div class="logo-container">
+                <img class="logo" src="./src/assets/logo.svg" alt="Logo do Mundo Pet" />
+            </div>
+            <main>
+                <header class="calendar">
+                    <div class="calendar-legend">
+                        <h1>Sua agenda</h1>
+                        <span
+                            >Aqui você pode ver todos os clientes e serviços
+                            agendados para hoje</span
+                        >
+                    </div>
+                    <div class="input-content">
+                        <img src="./src/assets/calendar.svg" alt="Icone de calendário" />
+                        <input type="date" id="personal-date" name="personal-date" />
+                        <span class="icon-arrow"></span>
+                    </div>
+                </header>
+                <div class="periods" id="periods">
+                    <section class="period" id="period-morning">
+                        <header>
+                            <img
+                                src="./src/assets/sun-blue.svg"
+                                alt="Icone de sol de cor azul" />
+                            <h2>Manhã</h2>
+                            <span class="period-time">09h-12h</span>
+                        </header>
+                        <ul class="period-list" id="list-morning">
+                        </ul>
+                    </section>
+                    <section class="period" id="period-afternoon">
+                        <header>
+                            <img
+                                src="./src/assets/cloud-sun-yellow.svg"
+                                alt="Icone de nuvem com sol de cor amarelo" />
+                            <h2>Tarde</h2>
+                            <span class="period-time">13h-18h</span>
+                        </header>
+                        <ul class="period-list" id="list-afternoon">
+                        </ul>
+                    </section>
+                    <section class="period" id="period-night">
+                        <header>
+                            <img
+                                src="./src/assets/moon-yellow.svg"
+                                alt="Icone de lua de cor amarela" />
+                            <h2>Noite</h2>
+                            <span class="period-time">19h-21h</span>
+                        </header>
+                        <ul class="period-list" id="list-night">
+                        </ul>
+                    </section>
+                </div>
+                <button id="new-schedule">Novo agendamento</button>
+            </main>
+            <form class="hide">
+                <header>
+                    <span class="icon-close" id="close-form"></span>
+                    <h2>Agende um atendimento</h2>
+                    <span>Preencha os dados do cliente para realizar o agendamento:</span>
+                </header>
+                <div class="input-fields">
+                    <div class="input-wrapper">
+                        <label for="client-name">Nome do tutor</label>
+                        <div class="input-content">
+                            <img src="./src/assets/user.svg" alt="Icone de boneco" />
+                            <input type="text" id="client-name" name="client-name" required placeholder="Rafael Lima Dalmagro" />
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="pet-name">Nome do pet</label>
+                        <div class="input-content">
+                            <img src="./src/assets/pet-paw.svg" alt="Icone de patinha" />
+                            <input type="text" id="pet-name" name="pet-name" required placeholder="Rex" />
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="client-phone">Telefone</label>
+                        <div class="input-content">
+                            <img src="./src/assets/phone.svg" alt="Icone de telefone" />
+                            <input type="tel" id="client-phone" name="client-phone" required placeholder="(00) 0 0000-0000" />
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="service">Serviço</label>
+                        <textarea name="service" id="service" required placeholder="Banho e Tosa"></textarea>
+                    </div>
+                    <div class="input-wrapper" id="input-wrapper-date">
+                        <div class="input-inner" id="input-date">
+                            <label for="date">Data</label>
+                            <div class="input-content">
+                                <img src="./src/assets/calendar.svg" alt="Ícone de calendário">
+                                <input type="date" id="date" name="date" required />
+                                <span class="icon-arrow"></span>
+                            </div>
+                        </div>
+                        <div class="input-inner" id="input-time">
+                            <label for="time">Horário</label>
+                            <div class="input-content">
+                                <img src="./src/assets/clock.svg" alt="Ícone de relógio">
+                                <input type="time" id="time" name="time" required/>
+                                <span class="icon-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <button type="submit">Agendar</button>
+            </form>
+        </div>
+        <script src="./src/main.js"></script>
+    </body>
+</html>

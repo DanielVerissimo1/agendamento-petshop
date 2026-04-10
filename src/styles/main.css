@@ -1,0 +1,223 @@
+main {
+    min-width: 48rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+
+    & header.calendar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & .calendar-legend {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 0.25rem;
+
+            & h1 {
+                font: var(--title);
+                color: var(--content-primary);
+            }
+            & span {
+                font: var(--paragraph-md);
+                color: var(--content-secondary);
+            }
+        }
+        .input-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            border: var(--border-primary) 1px solid;
+            border-radius: 0.5rem;
+            font: 500 1rem/150% var(--ff-inter);
+            color: var(--content-secondary);
+
+            & img {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+            & span.icon-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.25rem;
+                height: 1.25rem;
+                background-image: url("../assets/arrow-down-white.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+
+    & div.periods {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        & section.period {
+            background: var(--bg-tertiary);
+            border-radius: 0.625rem;
+
+            & header {
+                padding: 0.75rem 1.25rem;
+                border-bottom: solid 1px var(--border-divisor);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 0.75rem;
+
+                & h2 {
+                    font: var(--label-lg);
+                    color: var(--content-primary);
+                    margin-right: auto;
+                }
+                & span.period-time {
+                    font: var(--label-lg);
+                    color: var(--content-secondary);
+                }
+                & img {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+            }
+
+            & ul {
+                padding: 1.25rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+
+                & li {
+                    display: grid;
+                    grid-template-columns: 0.5fr 2fr 2fr auto;
+                    gap: 1rem;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        border-bottom: solid 1px var(--border-divisor);
+                    }
+                    & span.item-time {
+                        font: var(--label-md);
+                        color: var(--content-primary);
+                    }
+
+                    & span.item-client {
+                        font: var(--label-md);
+                        color: var(--content-secondary);
+
+                        & span#span-pet-name {
+                            font: var(--label-md);
+                            color: var(--content-primary);
+                        }
+                        & span#tutor-name {
+                            font: var(--paragraph-sm);
+                        }
+                    }
+
+                    & span.item-service {
+                        font: var(--paragraph-sm);
+                        color: var(--content-secondary);
+                    }
+
+                    & a.item-remove {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    & button {
+        position: absolute;
+        bottom: -15%;
+        right: -25%;
+    }
+}
+
+@media (width <= 85rem) {
+    main {
+        margin-top: 8rem;
+        min-width: 0;
+        width: 21.875rem;
+        align-items: start;
+
+        & header.calendar {
+            flex-direction: column;
+            align-items: start;
+            gap: 0.75rem;
+
+            & .calendar-legend {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+
+        & div.periods {
+            & section.period {
+                & ul {
+                    gap: 1rem;
+
+                    & li {
+                        display: grid;
+                        padding: 0.75rem;
+                        grid-template-columns: fit-content(100%) 1fr;
+                        grid-template-rows: auto auto auto;
+                        grid-template-areas:
+                            "time client"
+                            "service service"
+                            "remove remove";
+                        column-gap: 0.75rem;
+                        row-gap: 0rem;
+                        align-items: center;
+
+                        & span.item-time {
+                            grid-area: time;
+                        }
+
+                        & span.item-client {
+                            flex: 1;
+                            grid-area: client;
+                            font: var(--paragraph-sm);
+
+                            & span#span-pet-name {
+                                font: var(--label-lg);
+                                color: var(--content-primary);
+                            }
+                            & span#tutor-name {
+                                font: var(--paragraph-md);
+                            }
+                        }
+
+                        & span.item-service {
+                            grid-area: service;
+                            font: var(--paragraph-md);
+                        }
+
+                        & a.item-remove {
+                            grid-area: remove;
+                            justify-self: end;
+                            padding-top: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        & button {
+            margin-top: 1rem;
+            position: initial;
+            align-self: center;
+        }
+    }
+}
