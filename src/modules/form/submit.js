@@ -56,7 +56,7 @@ form.onsubmit = async (event) => {
         const petNameValue = petName.value.trim();
         const serviceDescriptionValue = serviceDescription.value.trim();
 
-        newSchedule({
+        await newSchedule({
             id,
             clientName: clientNameValue,
             clientPhone: clientPhoneValue,
@@ -65,15 +65,6 @@ form.onsubmit = async (event) => {
             petName: petNameValue,
             serviceDescription: serviceDescriptionValue,
         });
-        // const formulario = {
-        //     id,
-        //     clientName: clientNameValue,
-        //     clientPhone: clientPhoneValue,
-        //     scheduleDate: selectedDate.value,
-        //     scheduleTime: selectedTime.value,
-        //     petName: petNameValue,
-        //     serviceDescription: serviceDescriptionValue,
-        // };
 
         hideForm();
         clientName.value = "";

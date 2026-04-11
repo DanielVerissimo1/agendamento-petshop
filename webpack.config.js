@@ -13,6 +13,7 @@ module.exports = {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
         clean: true,
+        publicPath: isProduction ? "/agendamento-petshop/" : "/",
     },
     devServer: {
         static: {
@@ -31,7 +32,7 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(__dirname, "src", "assets"),
-                    to: path.resolve(__dirname, "dist", "src", "assets"),
+                    to: path.resolve(__dirname, "dist", "assets"),
                 },
             ],
         }),

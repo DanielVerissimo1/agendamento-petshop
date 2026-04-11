@@ -12,7 +12,7 @@ periods.forEach((period) => {
             const id = item.dataset.id;
 
             if (id) {
-                exibirMensagemToast("Você tem certeza que deseja cancelar este agendamento?");
+                exibirMensagemToast("Agendamento cancelado com sucesso!");
                 await cancelSchedule({ id });
                 schedulesDay();
             }

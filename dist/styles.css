@@ -275,7 +275,7 @@ form {
             color: var(--content-secondary);
         }
         & span.icon-close {
-            background-image: url(5deb42f42426aa442d45.svg);
+            background-image: url(/agendamento-petshop/5deb42f42426aa442d45.svg);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -287,7 +287,7 @@ form {
             cursor: pointer;
 
             &:hover {
-                background-image: url(52c3c3b0112e133b7961.svg);
+                background-image: url(/agendamento-petshop/52c3c3b0112e133b7961.svg);
             }
         }
     }
@@ -321,7 +321,7 @@ form {
                         justify-content: center;
                         width: 1.25rem;
                         height: 1.25rem;
-                        background-image: url(edf3d4a4ecd1201001e6.svg);
+                        background-image: url(/agendamento-petshop/edf3d4a4ecd1201001e6.svg);
                         background-repeat: no-repeat;
                         background-size: contain;
                         background-position: center;
@@ -453,7 +453,7 @@ main {
                 justify-content: center;
                 width: 1.25rem;
                 height: 1.25rem;
-                background-image: url(edf3d4a4ecd1201001e6.svg);
+                background-image: url(/agendamento-petshop/edf3d4a4ecd1201001e6.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
@@ -546,6 +546,8 @@ main {
         right: -25%;
     }
 }
+
+
 
 @media (width <= 85rem) {
     main {

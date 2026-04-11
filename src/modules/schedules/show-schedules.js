@@ -6,7 +6,7 @@ const listNight = document.querySelector("#list-night");
 
 export function showSchedules({ schedulesDay }) {
     try {
-        // Limpa as listas antes de adicionar novos agendamentos
+        // Limpa 
         listMorning.innerHTML = "";
         listAfternoon.innerHTML = "";
         listNight.innerHTML = "";
