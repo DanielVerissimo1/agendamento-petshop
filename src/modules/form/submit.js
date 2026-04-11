@@ -1,6 +1,5 @@
-import { formatePhone } from "./formaters.js";
+import { formatePhone, toCapitalizeAll } from "./formaters.js";
 import { showForm, hideForm } from "./show-form.js";
-import { toCapitalizeAll } from "./formaters.js";
 import { newSchedule } from "../services/new-shcedule.js";
 import { schedulesDay } from "../schedules/load-schedules.js";
 import { exibirMensagemToast } from "../utils/toast.js";

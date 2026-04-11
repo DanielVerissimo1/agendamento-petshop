@@ -1,5 +1,6 @@
 import { cancelSchedule } from "../services/cancel-schedule.js";
 import { schedulesDay } from "./load-schedules.js";
+import { exibirMensagemToast } from "../utils/toast.js";
 const periods = document.querySelectorAll(".period-list");
 periods.forEach((period) => {
     period.addEventListener("click", async (event) => {
@@ -11,13 +12,9 @@ periods.forEach((period) => {
             const id = item.dataset.id;
 
             if (id) {
-                const confirmation = confirm(
-                    "Você tem certeza que deseja cancelar este agendamento?"
-                );
-                if (confirmation) {
-                    await cancelSchedule({ id });
-                    schedulesDay();
-                }
+                exibirMensagemToast("Você tem certeza que deseja cancelar este agendamento?");
+                await cancelSchedule({ id });
+                schedulesDay();
             }
         }
     });

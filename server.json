@@ -8,15 +8,6 @@
       "scheduleTime": "21:00",
       "petName": "Dddddddddd",
       "serviceDescription": "eddddddd"
-    },
-    {
-      "id": "TOW5KFeNDc8",
-      "clientName": "Sssssssssss",
-      "clientPhone": "11111111111",
-      "scheduleDate": "2026-04-10",
-      "scheduleTime": "20:44",
-      "petName": "Ssssssssssssssss",
-      "serviceDescription": "ssssssssssssssssss"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
