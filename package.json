@@ -1,6 +1,12 @@
 {
+    "name": "agendamento-petshop",
+    "description": "Sistema de agendamento para petshop",
+    "author": {
+        "name": "Daniel Verissimo",
+        "email": "danielsantoss1300@gmail.com"
+    },
     "scripts": {
-        "build": "NODE_ENV=production webpack",
+        "build": "webpack",
         "dev": "webpack serve",
         "server": "json-server --watch server.json --port 3333"
     },
@@ -18,8 +24,8 @@
         "html-webpack-plugin": "^5.6.0",
         "mini-css-extract-plugin": "^2.10.2",
         "style-loader": "^3.3.3",
-        "webpack": "^5.89.0",
+        "webpack": "^5.104.1",
         "webpack-cli": "^5.1.4",
-        "webpack-dev-server": "^4.15.1"
+        "webpack-dev-server": "^5.2.1"
     }
 }
